@@ -18,7 +18,6 @@ export default function InterpolateScrollView() {
         onScroll={handleScroll}
         scrollEventThrottle={16}
         horizontal
-        contentContainerStyle={{ flex: 1 }}
         pagingEnabled
       >
         {WORDS.map((word, idx) =>
@@ -48,7 +47,7 @@ const Page = ({ title, index, translateX }) => {
     const opacity = interpolate(
       translateX.value,
       inputRange,
-      [-2, 1, -2],
+      [-1, 1, -1],
       Extrapolate.CLAMP
     )
     const y = interpolate(
