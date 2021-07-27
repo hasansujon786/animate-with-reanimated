@@ -9,6 +9,7 @@ import InterpolateScrollViewScreen from './screens/InterpolateScrollView'
 import InterpolateColorScreen from './screens/InterpolateColor'
 import PinchGestureScreen from './screens/PinchGesture'
 import DbTapScreen from './screens/DbTap.js'
+import ColorPickerScreen from './screens/ColorPicker'
 
 
 const Drawer = createDrawerNavigator()
@@ -19,6 +20,7 @@ export default function App() {
       <StatusBar />
       <NavigationContainer>
         <Drawer.Navigator >
+          <Drawer.Screen name='ColorPicker' component={ColorPickerScreen} />
           <Drawer.Screen name='InterpolateScrollView' component={InterpolateScrollViewScreen} />
           <Drawer.Screen name='DbTap' component={DbTapScreen} />
           <Drawer.Screen name='PinchGesture' component={PinchGestureScreen} />
