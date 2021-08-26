@@ -11,7 +11,7 @@ import PinchGestureScreen from './screens/PinchGesture'
 import DbTapScreen from './screens/DbTap.js'
 import ColorPickerScreen from './screens/ColorPicker'
 import CircularProgressBarScreen from './screens/CircularProgressBar'
-
+import AnimatedHeader from './screens/AnimatedHeader'
 
 const Drawer = createDrawerNavigator()
 
@@ -21,6 +21,8 @@ export default function App() {
       <StatusBar />
       <NavigationContainer>
         <Drawer.Navigator >
+          <Drawer.Screen name='Home' component={HomeScreen} />
+          <Drawer.Screen name='AnimatedHeader' component={AnimatedHeader} />
           <Drawer.Screen name='CircularProgressBar' component={CircularProgressBarScreen} />
           <Drawer.Screen name='ColorPicker' component={ColorPickerScreen} />
           <Drawer.Screen name='InterpolateScrollView' component={InterpolateScrollViewScreen} />
@@ -29,7 +31,6 @@ export default function App() {
           <Drawer.Screen name='InterpolateColor' component={InterpolateColorScreen} />
           <Drawer.Screen name='PanGesture' component={PanGestureScreen} />
           <Drawer.Screen name='Basic' component={BasicScreen} />
-          <Drawer.Screen name='Home' component={HomeScreen} />
         </Drawer.Navigator>
       </NavigationContainer>
     </>
