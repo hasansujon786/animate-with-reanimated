@@ -12,6 +12,7 @@ import DbTapScreen from './screens/DbTap.js'
 import ColorPickerScreen from './screens/ColorPicker'
 import CircularProgressBarScreen from './screens/CircularProgressBar'
 import AnimatedHeader from './screens/AnimatedHeader'
+import AnimatedHeader2 from './screens/AnimatedHeader2'
 
 const Drawer = createDrawerNavigator()
 
@@ -23,6 +24,7 @@ export default function App() {
         <Drawer.Navigator >
           <Drawer.Screen name='Home' component={HomeScreen} />
           <Drawer.Screen name='AnimatedHeader' component={AnimatedHeader} />
+          <Drawer.Screen name='AnimatedHeader2' component={AnimatedHeader2} />
           <Drawer.Screen name='CircularProgressBar' component={CircularProgressBarScreen} />
           <Drawer.Screen name='ColorPicker' component={ColorPickerScreen} />
           <Drawer.Screen name='InterpolateScrollView' component={InterpolateScrollViewScreen} />
