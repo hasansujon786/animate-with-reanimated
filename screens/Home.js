@@ -2,6 +2,7 @@ import React from 'react'
 import { TouchableOpacity, ScrollView, StyleSheet, Button, Text, View } from 'react-native';
 
 const ROUTE_NAMES = [
+  'SwipeToDelete',
   'AnimatedHeader',
   'AnimatedHeader2',
   'CircularProgressBar',

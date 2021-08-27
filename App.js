@@ -13,6 +13,7 @@ import ColorPickerScreen from './screens/ColorPicker'
 import CircularProgressBarScreen from './screens/CircularProgressBar'
 import AnimatedHeader from './screens/AnimatedHeader'
 import AnimatedHeader2 from './screens/AnimatedHeader2'
+import SwipeToDelete from './screens/SwipeToDelete'
 
 const Drawer = createDrawerNavigator()
 
@@ -23,6 +24,7 @@ export default function App() {
       <NavigationContainer>
         <Drawer.Navigator >
           <Drawer.Screen name='Home' component={HomeScreen} />
+          <Drawer.Screen name='SwipeToDelete' component={SwipeToDelete} />
           <Drawer.Screen name='AnimatedHeader' component={AnimatedHeader} />
           <Drawer.Screen name='AnimatedHeader2' component={AnimatedHeader2} />
           <Drawer.Screen name='CircularProgressBar' component={CircularProgressBarScreen} />
