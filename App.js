@@ -15,6 +15,7 @@ import AnimatedHeader from './screens/AnimatedHeader'
 import AnimatedHeader2 from './screens/AnimatedHeader2'
 import SwipeToDelete from './screens/SwipeToDelete'
 import ImageSliderZara from './screens/ImageSliderZara'
+import ImageSlider from './screens/ImageSlider'
 
 const Drawer = createDrawerNavigator()
 
@@ -25,6 +26,7 @@ export default function App() {
       <NavigationContainer>
         <Drawer.Navigator >
           <Drawer.Screen name='Home' component={HomeScreen} />
+          <Drawer.Screen name='ImageSlider' component={ImageSlider} />
           <Drawer.Screen name='ImageSliderZara' component={ImageSliderZara} />
           <Drawer.Screen name='SwipeToDelete' component={SwipeToDelete} />
           <Drawer.Screen name='AnimatedHeader' component={AnimatedHeader} />
