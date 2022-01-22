@@ -2,6 +2,7 @@ import React from 'react'
 import { TouchableOpacity, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 const ROUTE_NAMES = [
+  'LayoutAnimation',
   'ImageSlider',
   'ImageSliderZara',
   'SwipeToDelete',
